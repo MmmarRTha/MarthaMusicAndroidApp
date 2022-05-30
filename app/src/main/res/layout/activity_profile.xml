@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/ivLoginLogo"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
         android:src="@drawable/photo_2022_05_29_14_38_44"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +26,8 @@
         app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
 
     <EditText
-        android:layout_width="0dp"
         style="@style/AppTheme.EditTextStyle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hint_password"
@@ -38,7 +38,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/margin_default"
         android:backgroundTint="@color/green"
         android:text="@string/button_login"
         android:textColor="@color/black"
